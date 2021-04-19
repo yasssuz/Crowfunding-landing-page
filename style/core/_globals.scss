@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #fafafa;
+  position: relative;
+}
+
+body.active {
+  overflow: hidden;
+}
+
+html.active {
+  overflow: hidden;
+}
+
+body,
+input,
+button {
+  font-family: 'Commissioner', sans-serif;
+}
+
+//HTML CLASSES
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  position: relative;
+  padding: 0 calc((100vw - 1250px) / 2);
+  margin: 0 rem(20);
+}

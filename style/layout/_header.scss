@@ -1,0 +1,18 @@
+.hero-bg {
+  background: url('../images/image-hero-mobile.jpg') no-repeat center center;
+  background-size: cover;
+
+  @media screen and (min-width: 680px) {
+    background: url('../images/image-hero-desktop.jpg') no-repeat;
+    background-size: cover;
+  }
+
+  .container {
+    min-height: 43vh;
+    position: relative;
+
+    @media screen and (min-width: 680px) {
+      min-height: 50vh;
+    }
+  }
+}

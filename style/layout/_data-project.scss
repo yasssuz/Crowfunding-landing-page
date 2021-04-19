@@ -1,0 +1,72 @@
+&__middle-section {
+  background-color: white;
+  padding: rem(30) rem(20);
+  border-radius: rem(11);
+  border: 2px solid #f3f3f3;
+  width: 100%;
+  margin-top: rem(25);
+  max-width: 740px;
+  text-align: center;
+
+  @media screen and (min-width: 680px) {
+    padding: rem(50) rem(40);
+    text-align: left;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 680px) {
+      flex-direction: row;
+      margin-bottom: rem(40);
+    }
+
+    .monetary-amount {
+      padding-bottom: em(25);
+
+      @media screen and (min-width: 680px) {
+        padding: 0 em(90) 0 0;
+      }
+    }
+
+    div + div {
+      padding: em(25);
+      border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+      @media screen and (min-width: 680px) {
+        padding: 0 em(90) 0 em(30);
+        border-left: 1px solid rgba(0, 0, 0, 0.2);
+        border-top: none;
+      }
+    }
+
+    .days-left {
+      @media screen and (min-width: 680px) {
+        padding: 0 0 0 em(30);
+      }
+    }
+
+    div {
+      h3 {
+        margin-bottom: rem(5);
+      }
+    }
+  }
+
+  progress {
+    margin: auto;
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  progress::-webkit-progress-bar {
+    background: $Softgray;
+    border-radius: 30px;
+  }
+
+  progress::-webkit-progress-value {
+    background: $Moderatecyan;
+    border-radius: 30px;
+  }
+}

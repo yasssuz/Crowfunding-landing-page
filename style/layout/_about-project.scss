@@ -1,0 +1,87 @@
+&__bottom-section {
+  background-color: white;
+  padding: rem(30) rem(20);
+  border-radius: rem(11);
+  border: 2px solid #f3f3f3;
+  width: 100%;
+  margin: rem(25) 0;
+  max-width: 740px;
+
+  @media screen and (min-width: 680px) {
+    padding: rem(50) rem(40);
+  }
+
+  h3 {
+    margin-bottom: rem(20);
+  }
+
+  p + p {
+    margin: rem(20) 0;
+  }
+
+  .card {
+    border: 1px solid #e7e7e7;
+    border-radius: 9px;
+    padding: rem(23) rem(20);
+
+    @media screen and (min-width: 680px) {
+      padding: rem(29) rem(25);
+    }
+
+    .title-area {
+      @media screen and (min-width: 680px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      h4 {
+        margin-bottom: rem(8);
+
+        @media screen and (min-width: 680px) {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    p {
+      margin: rem(25) 0;
+    }
+
+    .reward-area {
+      @media screen and (min-width: 680px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .amount-left {
+        display: flex;
+        align-items: center;
+
+        h2 {
+          margin-right: rem(7);
+        }
+      }
+
+      a {
+        margin-top: rem(25);
+        height: 56px;
+        width: 100%;
+        max-width: 170px;
+
+        @media screen and (min-width: 680px) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .special-edition-card {
+    opacity: 0.55;
+  }
+
+  .card + .card {
+    margin-top: rem(20);
+  }
+}

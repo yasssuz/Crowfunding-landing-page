@@ -1,0 +1,39 @@
+.success-modal.modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.success-modal {
+  position: fixed;
+  background-color: white;
+  padding: rem(30) rem(20);
+  border-radius: rem(11);
+  border: 2px solid #f3f3f3;
+  width: 90%;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  max-width: 740px;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  text-align: center;
+  max-width: 500px;
+
+  &__title {
+    margin-top: rem(20);
+  }
+
+  &__paragraph {
+    margin: rem(20) 0 rem(25) 0;
+  }
+
+  &__btn {
+    min-height: rem(50);
+    width: 100%;
+    max-width: 120px;
+    margin: auto;
+    font-weight: 600;
+  }
+}

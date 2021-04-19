@@ -1,0 +1,24 @@
+@import './core/mixins';
+@import './core/variables';
+@import './core/globals';
+@import './core/typography';
+@import './components/navbar';
+@import './components/buttons';
+@import './layout/header';
+
+.main {
+  .container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @import './layout/intro-project';
+
+  @import './layout/data-project';
+
+  @import './layout/about-project';
+
+  @import './layout/modal-back-project';
+
+  @import './layout/modal-success';
+}

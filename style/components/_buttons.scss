@@ -1,0 +1,147 @@
+.btn-primary {
+  all: unset;
+  background: $Moderatecyan;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: rem(50);
+  font-size: rem(17);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background: $Darkcyan;
+  }
+}
+
+.btn-primary-deactivated {
+  background: $Gray;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: rem(50);
+  font-size: rem(17);
+  font-weight: 500;
+  cursor: not-allowed;
+  transition: background-color 0.2s ease;
+  pointer-events: none;
+}
+
+.btn-bookmark {
+  all: unset;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+
+  &:hover {
+    circle {
+      fill: $Darkgray;
+    }
+  }
+
+  svg {
+    height: 56px;
+    margin: auto;
+    z-index: 5;
+
+    circle {
+      transition: fill 0.2s ease;
+    }
+
+    path {
+      transition: fill 0.2s ease;
+    }
+  }
+
+  #right-side {
+    height: 56px;
+    background: $Softgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -20px;
+    width: 170px;
+    border-radius: 0 50px 50px 0;
+
+    @media screen and (max-width: 680px) {
+      display: none;
+    }
+
+    p {
+      all: unset;
+      font-size: rem(17);
+      font-weight: 700;
+      color: $Darkgray;
+      transition: all 0.2s ease;
+    }
+  }
+}
+
+.btn-bookmark.saved {
+  &:hover {
+    svg {
+      circle {
+        fill: $Darkcyan;
+      }
+    }
+
+    #right-side {
+      p {
+        color: $Darkcyan;
+      }
+    }
+  }
+
+  svg {
+    circle {
+      fill: $Moderatecyan;
+    }
+
+    path {
+      fill: white;
+    }
+  }
+
+  #right-side {
+    p {
+      color: $Moderatecyan;
+    }
+  }
+}
+
+.btn-checkbox {
+  cursor: pointer;
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 1px solid #97979756;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: $Moderatecyan;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+  }
+}
+
+.btn-checkbox.selected {
+  &::after {
+    visibility: visible;
+    opacity: 1;
+  }
+}

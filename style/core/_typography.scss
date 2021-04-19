@@ -1,0 +1,50 @@
+//TITLES
+.primary-title {
+  color: $Black;
+  font-size: clamp(rem(20), 5vw, rem(21));
+  font-weight: 700;
+
+  @media screen and (min-width: 680px) {
+    font-size: clamp(rem(24), 6vw, rem(29));
+  }
+}
+
+.secondary-title {
+  color: $Black;
+  font-size: clamp(rem(30), 9vw, rem(32));
+  font-weight: 700;
+}
+
+.tertiary-title {
+  font-size: clamp(rem(17), 5.1vw, rem(19));
+  color: $Black;
+  font-weight: 700;
+
+  @media screen and (min-width: 680px) {
+    font-size: clamp(rem(19), 5.1vw, rem(20));
+  }
+}
+
+.quaternary-title {
+  font-size: clamp(rem(16), 5.1vw, rem(17));
+  color: $Black;
+  font-weight: 700;
+
+  @media screen and (min-width: 680px) {
+    font-size: clamp(rem(17), 5.1vw, rem(18));
+  }
+}
+
+//PARAGRAPHS
+.primary-paragraph {
+  color: $Darkgray;
+  font-weight: 400;
+  font-size: clamp(rem(15), 4vw, rem(16));
+  line-height: 1.6;
+}
+
+.green-paragraph {
+  color: $Moderatecyan;
+  font-weight: 700;
+  font-size: rem(15);
+}

@@ -1,0 +1,44 @@
+
+&__upper-section {
+  background-color: white;
+  text-align: center;
+  padding: rem(10) rem(20) rem(30);
+  border-radius: rem(11);
+  border: 2px solid #f3f3f3;
+  margin-top: -60px;
+  width: 100%;
+  max-width: 740px;
+
+  @media screen and (min-width: 680px) {
+    padding: rem(10) rem(40) rem(30);
+    margin-top: -90px;
+  }
+
+  .project-picture {
+    margin-top: rem(-36);
+  }
+
+  h1 {
+    margin: rem(15) auto;
+    max-width: 20ch;
+
+    @media screen and (min-width: 680px) {
+      max-width: unset;
+    }
+  }
+
+  p {
+    margin-bottom: rem(30);
+  }
+
+  .buttons-area {
+    align-items: center;
+    justify-content: space-between;
+
+    .btn-primary {
+      height: 56px;
+      width: 76%;
+      max-width: 220px;
+    }
+  }
+}
